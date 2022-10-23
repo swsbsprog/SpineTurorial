@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour, ITarget
+public class Enemy : Attackable
 {
     public string Name => name;
 
