@@ -16,4 +16,9 @@ public class ItemBase : MonoBehaviour
         //item.name 이름 설정.
         iconNameText.text = sprite.name.Split("_")[^1];  
     }
+
+    public void OnValueChange(bool isChecked)
+    {
+        print(iconNameText.text + "사용했습니다");
+    }
 }
