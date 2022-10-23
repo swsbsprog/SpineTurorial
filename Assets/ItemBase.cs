@@ -14,6 +14,6 @@ public class ItemBase : MonoBehaviour
         // 아이콘 설정.
         icon.sprite = sprite;
         //item.name 이름 설정.
-        iconNameText.text = sprite.name;  
+        iconNameText.text = sprite.name.Split("_")[^1];  
     }
 }
