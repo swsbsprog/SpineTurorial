@@ -19,6 +19,8 @@ public class ItemBase : MonoBehaviour
 
     public void OnValueChange(bool isChecked)
     {
-        print(iconNameText.text + "사용했습니다");
+        print(iconNameText.text + "선택했습니다");
+        TrunManager.instance.SelectItem(icon.sprite);
+        // 아이템/무기/스킬 -> 사용대상 선택 후 사용했습니다. 출력.
     }
 }

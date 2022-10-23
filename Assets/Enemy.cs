@@ -2,12 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hero : MonoBehaviour, ITarget
+public class Enemy : MonoBehaviour, ITarget
 {
-    public Sprite[] weapons;
-    public Sprite[] skills;
-    public Sprite[] items;
-
     public string Name => name;
 
     private void OnMouseDown()
