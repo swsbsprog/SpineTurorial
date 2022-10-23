@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
  * Spine Runtimes License Agreement
  * Last updated January 1, 2020. Replaces all prior versions.
  *
@@ -40,7 +40,8 @@ namespace Spine.Unity.Examples {
 		public float maximumDelay = 3f;
 
 		IEnumerator Start () {
-			var skeletonAnimation = GetComponent<SkeletonAnimation>(); if (skeletonAnimation == null) yield break;
+			var skeletonAnimation = GetComponent<SkeletonAnimation>(); 
+			if (skeletonAnimation == null) yield break;
 			while (true) {
 				skeletonAnimation.AnimationState.SetAnimation(SpineBlinkPlayer.BlinkTrack, blinkAnimation, false);
 				yield return new WaitForSeconds(Random.Range(minimumDelay, maximumDelay));
