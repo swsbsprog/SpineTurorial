@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Spine.Unity;
 public class Hero : Attackable
 {
+    public Animator animator;
     public Sprite[] weapons;
     public Sprite[] skills;
     public Sprite[] items;
@@ -14,6 +16,11 @@ public class Hero : Attackable
     {
         print(name);
         TrunManager.instance.SelctTarget(this);
+    }
+
+    internal void SetAttackAnimation()
+    {
+        animator.SetTrigger("Attack");
     }
 }
 

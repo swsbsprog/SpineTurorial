@@ -62,11 +62,15 @@ public class TrunManager : MonoBehaviour
 
                 float destMovTime = 0.3f;
                 selectedHero.transform.DOMove(destination, destMovTime)
-                    .OnComplete(() => {target.SetDamage(1);});
+                    .OnComplete(() => {
+                        // 공격 모션 하자.
+                        selectedHero.SetAttackAnimation();
+                        target.SetDamage(1);
+                    });
 
                 // 복귀
                 selectedHero.transform.DOMove(selectedHero.transform.position, 0.1f)
-                    .SetDelay(destMovTime + 0.4f);
+                    .SetDelay(destMovTime + 1.4f);
 
                 break;
         }
