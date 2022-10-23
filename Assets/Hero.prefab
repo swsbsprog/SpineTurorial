@@ -158,6 +158,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603a7ebef92f7c446a115ec65f69e70a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapons:
+  - {fileID: 21300000, guid: a5a98290055e4cc4f9e792618bfbf57f, type: 3}
+  - {fileID: 21300000, guid: 723fc9ed1c3b3aa49af687ca9178b361, type: 3}
+  - {fileID: 21300000, guid: 68056bf3c3d2853468ccf0b10da3c6d9, type: 3}
+  skills:
+  - {fileID: 21300000, guid: 8338f1d3fc4be3f4d9ca00e0e6f1e625, type: 3}
+  - {fileID: 21300000, guid: be7165784c586174196700da93d9fe2a, type: 3}
+  - {fileID: 21300000, guid: 400a70c6131862b4c8db22e36c2d012b, type: 3}
+  items:
+  - {fileID: 21300000, guid: 7b548f9099884d54fa60bb2d14e685c8, type: 3}
+  - {fileID: 21300000, guid: 9a44620d5b4fa4a43b0521e6c7b3db97, type: 3}
+  - {fileID: 21300000, guid: d15f055166a0d0944a4dc0859f40bb1e, type: 3}
 --- !u!61 &942450361022017010
 BoxCollider2D:
   m_ObjectHideFlags: 0
